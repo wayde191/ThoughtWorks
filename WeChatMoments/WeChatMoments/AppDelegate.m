@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TWNetworkMonitor.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self startupExceptionHandler];
+    [self startupNetworkMonitor];
     return YES;
 }
 
@@ -40,6 +42,26 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Setup
+- (void)startupNetworkMonitor {
+    [[TWNetworkMonitor sharedInstance] startNotifer];
+}
+
+void UncaughtExceptionHandler(NSException *exception)
+{
+    NSArray  *arr = [exception callStackSymbols];
+    NSString *reason = [exception reason];
+    NSString *name = [exception name];
+    NSString *crashInfo = [NSString stringWithFormat:@"=============异常崩溃报告=============\nname:\n%@\nreason:\n%@\ncallStackSymbols:\n%@",
+                           name,reason,[arr componentsJoinedByString:@"\n"]];
+    NSLog(@"crash info %@", crashInfo);
+    //TODO: Write to local file log and upload to server if necessary
+}
+
+- (void)startupExceptionHandler {
+    NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
 }
 
 @end
