@@ -20,6 +20,9 @@
 		B73A18031AD104E2006B5578 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18021AD104E2006B5578 /* Tweet.m */; };
 		B73A18061AD10FE3006B5578 /* TWBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18051AD10FE3006B5578 /* TWBaseModel.m */; };
 		B73A18081AD11AF5006B5578 /* NetwoksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18071AD11AF5006B5578 /* NetwoksTests.m */; };
+		B73A180C1AD12AF4006B5578 /* TWImageCacheCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180B1AD12AF4006B5578 /* TWImageCacheCenter.m */; };
+		B73A180F1AD12E2E006B5578 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180E1AD12E2E006B5578 /* TWImageView.m */; };
+		B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18171AD13665006B5578 /* NSString+TWAddition.m */; };
 		B7FCC3541ACF760E00F6BEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3531ACF760E00F6BEBC /* main.m */; };
 		B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3561ACF760E00F6BEBC /* AppDelegate.m */; };
 		B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3591ACF760E00F6BEBC /* ViewController.m */; };
@@ -69,6 +72,15 @@
 		B73A18041AD10FE3006B5578 /* TWBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBaseModel.h; sourceTree = "<group>"; };
 		B73A18051AD10FE3006B5578 /* TWBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseModel.m; sourceTree = "<group>"; };
 		B73A18071AD11AF5006B5578 /* NetwoksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetwoksTests.m; sourceTree = "<group>"; };
+		B73A180A1AD12AF4006B5578 /* TWImageCacheCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageCacheCenter.h; sourceTree = "<group>"; };
+		B73A180B1AD12AF4006B5578 /* TWImageCacheCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageCacheCenter.m; sourceTree = "<group>"; };
+		B73A180D1AD12E2E006B5578 /* TWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageView.h; sourceTree = "<group>"; };
+		B73A180E1AD12E2E006B5578 /* TWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageView.m; sourceTree = "<group>"; };
+		B73A18131AD135AF006B5578 /* TWAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAdditions.h; sourceTree = "<group>"; };
+		B73A18141AD135EC006B5578 /* TWAdditions+Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWAdditions+Foundation.h"; sourceTree = "<group>"; };
+		B73A18151AD13603006B5578 /* TWAdditions+UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWAdditions+UIKit.h"; sourceTree = "<group>"; };
+		B73A18161AD13665006B5578 /* NSString+TWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TWAddition.h"; sourceTree = "<group>"; };
+		B73A18171AD13665006B5578 /* NSString+TWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TWAddition.m"; sourceTree = "<group>"; };
 		B7FCC34E1ACF760E00F6BEBC /* WeChatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FCC3521ACF760E00F6BEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7FCC3531ACF760E00F6BEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,8 +176,47 @@
 		B73A17FA1AD101A5006B5578 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B73A180D1AD12E2E006B5578 /* TWImageView.h */,
+				B73A180E1AD12E2E006B5578 /* TWImageView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B73A18091AD12ABA006B5578 /* CacheCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B73A180A1AD12AF4006B5578 /* TWImageCacheCenter.h */,
+				B73A180B1AD12AF4006B5578 /* TWImageCacheCenter.m */,
+			);
+			path = CacheCenter;
+			sourceTree = "<group>";
+		};
+		B73A18101AD13562006B5578 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				B73A18111AD135A1006B5578 /* Foundation */,
+				B73A18121AD135A1006B5578 /* UIKit */,
+				B73A18131AD135AF006B5578 /* TWAdditions.h */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		B73A18111AD135A1006B5578 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B73A18141AD135EC006B5578 /* TWAdditions+Foundation.h */,
+				B73A18161AD13665006B5578 /* NSString+TWAddition.h */,
+				B73A18171AD13665006B5578 /* NSString+TWAddition.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B73A18121AD135A1006B5578 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B73A18151AD13603006B5578 /* TWAdditions+UIKit.h */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		B7FCC3451ACF760E00F6BEBC = {
@@ -191,6 +242,7 @@
 		B7FCC3501ACF760E00F6BEBC /* WeChatMoments */ = {
 			isa = PBXGroup;
 			children = (
+				B73A18101AD13562006B5578 /* Additions */,
 				B73A17E51AD03923006B5578 /* APPConf */,
 				B73A17E31AD037D0006B5578 /* Macros */,
 				B73A17D81AD027B7006B5578 /* Kits */,
@@ -203,6 +255,7 @@
 				B73A17F71AD100E6006B5578 /* VCModel.m */,
 				B73A17F91AD101A5006B5578 /* Models */,
 				B73A17FA1AD101A5006B5578 /* Views */,
+				B73A18091AD12ABA006B5578 /* CacheCenter */,
 				B7FCC35B1ACF760E00F6BEBC /* Main.storyboard */,
 				B7FCC35E1ACF760E00F6BEBC /* Images.xcassets */,
 				B7FCC3601ACF760E00F6BEBC /* LaunchScreen.xib */,
@@ -340,6 +393,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73A17F21AD0CBD5006B5578 /* TWRequestResponseFailure.m in Sources */,
+				B73A180F1AD12E2E006B5578 /* TWImageView.m in Sources */,
+				B73A180C1AD12AF4006B5578 /* TWImageCacheCenter.m in Sources */,
 				B73A18061AD10FE3006B5578 /* TWBaseModel.m in Sources */,
 				B73A18031AD104E2006B5578 /* Tweet.m in Sources */,
 				B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */,
@@ -347,6 +402,7 @@
 				B73A17F51AD0CDDB006B5578 /* TWRequestResponseSuccess.m in Sources */,
 				B73A17F81AD100E6006B5578 /* VCModel.m in Sources */,
 				B73A17DC1AD02855006B5578 /* TWRequest.m in Sources */,
+				B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */,
 				B73A17FD1AD1028A006B5578 /* User.m in Sources */,
 				B73A18001AD10364006B5578 /* Comment.m in Sources */,
 				B73A17ED1AD03D4F006B5578 /* README.md in Sources */,

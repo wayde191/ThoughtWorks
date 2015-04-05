@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VCModel.h"
+#import "TWImageView.h"
 
 @interface ViewController () {
     VCModel *_dm;
@@ -21,6 +22,13 @@
     [super viewDidLoad];
     [self initModel];
     [self loadAllData];
+    
+    // Testing
+    TWImageView *aimageView = [[TWImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    [self.view addSubview:aimageView];
+    [aimageView loadImageByUrl:@"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlJRALAf-76JPOLohBKzBg8Ab4Q5pWeQhF5igSfBflE_UYbqu7"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
