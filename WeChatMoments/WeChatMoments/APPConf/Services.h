@@ -9,5 +9,10 @@
 #ifndef WeChatMoments_Services_h
 #define WeChatMoments_Services_h
 
+#define SERVICE_ROOT_URL    @"http://thoughtworks-ios.herokuapp.com"
+
+/////////////////////////// Services ///////////////////////////////////////////
+#define SERVICE_WHOAMI                       @"/user/jsmith"
+#define SERVICE_GET_MY_TWEETS                @"/user/jsmith/tweets"
 
 #endif

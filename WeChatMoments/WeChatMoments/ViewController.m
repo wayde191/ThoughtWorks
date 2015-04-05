@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "VCModel.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    VCModel *_dm;
+}
 
 @end
 
@@ -16,12 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initModel];
+    [self loadAllData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Private Methods
+- (void)loadAllData {
+    if (![_dm doCallServiceGetAllDataWithHandler:^{
+        // Get All Data done, refresh the view
+        TWLOGINFO(@"Get All Data done, refresh the view");
+    }]) {
+        //TODO: Network issue. Show alert and clickable refresh view
+        [self showNetWorkIssue];
+        [self showRetryView];
+    }
+}
+
+- (void)initModel {
+    _dm = [[VCModel alloc] init];
+}
+
+- (void)showNetWorkIssue {
+    //TODO
+}
+
+- (void)showRetryView {
+    //TODO
 }
 
 @end

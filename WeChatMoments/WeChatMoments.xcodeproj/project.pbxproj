@@ -12,6 +12,14 @@
 		B73A17E21AD02F87006B5578 /* TWNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17E11AD02F87006B5578 /* TWNetworkMonitor.m */; };
 		B73A17EC1AD03D4F006B5578 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B73A17EA1AD03D4F006B5578 /* LICENSE */; };
 		B73A17ED1AD03D4F006B5578 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B73A17EB1AD03D4F006B5578 /* README.md */; };
+		B73A17F21AD0CBD5006B5578 /* TWRequestResponseFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17F11AD0CBD5006B5578 /* TWRequestResponseFailure.m */; };
+		B73A17F51AD0CDDB006B5578 /* TWRequestResponseSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17F41AD0CDDB006B5578 /* TWRequestResponseSuccess.m */; };
+		B73A17F81AD100E6006B5578 /* VCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17F71AD100E6006B5578 /* VCModel.m */; };
+		B73A17FD1AD1028A006B5578 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17FC1AD1028A006B5578 /* User.m */; };
+		B73A18001AD10364006B5578 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A17FF1AD10364006B5578 /* Comment.m */; };
+		B73A18031AD104E2006B5578 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18021AD104E2006B5578 /* Tweet.m */; };
+		B73A18061AD10FE3006B5578 /* TWBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18051AD10FE3006B5578 /* TWBaseModel.m */; };
+		B73A18081AD11AF5006B5578 /* NetwoksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18071AD11AF5006B5578 /* NetwoksTests.m */; };
 		B7FCC3541ACF760E00F6BEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3531ACF760E00F6BEBC /* main.m */; };
 		B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3561ACF760E00F6BEBC /* AppDelegate.m */; };
 		B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3591ACF760E00F6BEBC /* ViewController.m */; };
@@ -45,6 +53,22 @@
 		B73A17E91AD03A4B006B5578 /* TW-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TW-Prefix.pch"; sourceTree = "<group>"; };
 		B73A17EA1AD03D4F006B5578 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B73A17EB1AD03D4F006B5578 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B73A17EF1AD0CA2F006B5578 /* TWRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWRequestProtocol.h; sourceTree = "<group>"; };
+		B73A17F01AD0CBD5006B5578 /* TWRequestResponseFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRequestResponseFailure.h; sourceTree = "<group>"; };
+		B73A17F11AD0CBD5006B5578 /* TWRequestResponseFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRequestResponseFailure.m; sourceTree = "<group>"; };
+		B73A17F31AD0CDDB006B5578 /* TWRequestResponseSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRequestResponseSuccess.h; sourceTree = "<group>"; };
+		B73A17F41AD0CDDB006B5578 /* TWRequestResponseSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRequestResponseSuccess.m; sourceTree = "<group>"; };
+		B73A17F61AD100E6006B5578 /* VCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCModel.h; sourceTree = "<group>"; };
+		B73A17F71AD100E6006B5578 /* VCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCModel.m; sourceTree = "<group>"; };
+		B73A17FB1AD1028A006B5578 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B73A17FC1AD1028A006B5578 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B73A17FE1AD10364006B5578 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		B73A17FF1AD10364006B5578 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		B73A18011AD104E2006B5578 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		B73A18021AD104E2006B5578 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		B73A18041AD10FE3006B5578 /* TWBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBaseModel.h; sourceTree = "<group>"; };
+		B73A18051AD10FE3006B5578 /* TWBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseModel.m; sourceTree = "<group>"; };
+		B73A18071AD11AF5006B5578 /* NetwoksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetwoksTests.m; sourceTree = "<group>"; };
 		B7FCC34E1ACF760E00F6BEBC /* WeChatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FCC3521ACF760E00F6BEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7FCC3531ACF760E00F6BEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +118,11 @@
 				B73A17E11AD02F87006B5578 /* TWNetworkMonitor.m */,
 				B73A17DD1AD02C17006B5578 /* Reachability.h */,
 				B73A17DE1AD02C17006B5578 /* Reachability.m */,
+				B73A17EF1AD0CA2F006B5578 /* TWRequestProtocol.h */,
+				B73A17F01AD0CBD5006B5578 /* TWRequestResponseFailure.h */,
+				B73A17F11AD0CBD5006B5578 /* TWRequestResponseFailure.m */,
+				B73A17F31AD0CDDB006B5578 /* TWRequestResponseSuccess.h */,
+				B73A17F41AD0CDDB006B5578 /* TWRequestResponseSuccess.m */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -115,6 +144,28 @@
 				B73A17E91AD03A4B006B5578 /* TW-Prefix.pch */,
 			);
 			path = APPConf;
+			sourceTree = "<group>";
+		};
+		B73A17F91AD101A5006B5578 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B73A18041AD10FE3006B5578 /* TWBaseModel.h */,
+				B73A18051AD10FE3006B5578 /* TWBaseModel.m */,
+				B73A17FB1AD1028A006B5578 /* User.h */,
+				B73A17FC1AD1028A006B5578 /* User.m */,
+				B73A17FE1AD10364006B5578 /* Comment.h */,
+				B73A17FF1AD10364006B5578 /* Comment.m */,
+				B73A18011AD104E2006B5578 /* Tweet.h */,
+				B73A18021AD104E2006B5578 /* Tweet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B73A17FA1AD101A5006B5578 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B7FCC3451ACF760E00F6BEBC = {
@@ -148,6 +199,10 @@
 				B7FCC3561ACF760E00F6BEBC /* AppDelegate.m */,
 				B7FCC3581ACF760E00F6BEBC /* ViewController.h */,
 				B7FCC3591ACF760E00F6BEBC /* ViewController.m */,
+				B73A17F61AD100E6006B5578 /* VCModel.h */,
+				B73A17F71AD100E6006B5578 /* VCModel.m */,
+				B73A17F91AD101A5006B5578 /* Models */,
+				B73A17FA1AD101A5006B5578 /* Views */,
 				B7FCC35B1ACF760E00F6BEBC /* Main.storyboard */,
 				B7FCC35E1ACF760E00F6BEBC /* Images.xcassets */,
 				B7FCC3601ACF760E00F6BEBC /* LaunchScreen.xib */,
@@ -169,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FCC36D1ACF760E00F6BEBC /* WeChatMomentsTests.m */,
+				B73A18071AD11AF5006B5578 /* NetwoksTests.m */,
 				B7FCC36B1ACF760E00F6BEBC /* Supporting Files */,
 			);
 			path = WeChatMomentsTests;
@@ -283,9 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73A17F21AD0CBD5006B5578 /* TWRequestResponseFailure.m in Sources */,
+				B73A18061AD10FE3006B5578 /* TWBaseModel.m in Sources */,
+				B73A18031AD104E2006B5578 /* Tweet.m in Sources */,
 				B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */,
 				B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */,
+				B73A17F51AD0CDDB006B5578 /* TWRequestResponseSuccess.m in Sources */,
+				B73A17F81AD100E6006B5578 /* VCModel.m in Sources */,
 				B73A17DC1AD02855006B5578 /* TWRequest.m in Sources */,
+				B73A17FD1AD1028A006B5578 /* User.m in Sources */,
+				B73A18001AD10364006B5578 /* Comment.m in Sources */,
 				B73A17ED1AD03D4F006B5578 /* README.md in Sources */,
 				B7FCC3541ACF760E00F6BEBC /* main.m in Sources */,
 				B73A17E21AD02F87006B5578 /* TWNetworkMonitor.m in Sources */,
@@ -298,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FCC36E1ACF760E00F6BEBC /* WeChatMomentsTests.m in Sources */,
+				B73A18081AD11AF5006B5578 /* NetwoksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

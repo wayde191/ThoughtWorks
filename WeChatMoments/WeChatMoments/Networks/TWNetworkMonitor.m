@@ -32,14 +32,19 @@ static TWNetworkMonitor *singletonInstance = nil;
 }
 
 #pragma mark - Public Methods
+- (void)dealloc {
+    [self removeObserver];
+}
+
 - (void)startNotifer {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStateDidChanged:) name:kReachabilityChangedNotification object:nil];
+    [self addObserver];
     _reachAbility = [Reachability reachabilityForInternetConnection];
     [self updateNetwordStatus:_reachAbility.currentReachabilityStatus];
     [_reachAbility startNotifier];
 }
 
 - (void)stopNotifier {
+    [self removeObserver];
     if (_reachAbility) {
         [_reachAbility stopNotifier];
     }
@@ -90,6 +95,14 @@ static TWNetworkMonitor *singletonInstance = nil;
     }
     
     TWLOGINFO(@"%@", _networkType);
+}
+
+- (void)addObserver {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStateDidChanged:) name:kReachabilityChangedNotification object:nil];
+}
+
+- (void)removeObserver {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
 }
 
 #pragma mark - Class Methods
