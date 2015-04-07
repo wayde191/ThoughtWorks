@@ -11,10 +11,10 @@ Get Ready!
 5: TableView原生上拉加载更多，下接刷新。内容动态计算。   
 6: 工程源码Git控制。Github: https://github.com/wayde191/ThoughtWorks ; 欢迎查阅。   
 7: 视频真机Demo下载地址：http://pan.baidu.com/s/1i3h90PJ
-8: 生产开发环境切换 AppConf->AppConfig.h : APP_PRODUCTION_ENVIRONMENT。当需要查看log时，可以打开此宏。
-9: 测试用例有添加，但还需要完善。
-10: 没有使用nibs, storyboards
-11: ios 7.0以上
+8: 生产开发环境切换 AppConf->AppConfig.h : APP_PRODUCTION_ENVIRONMENT。当需要查看log时，可以打开此宏。   
+9: 测试用例有添加，但还需要完善。   
+10: 没有使用nibs, storyboards   
+11: ios 7.0以上   
 
 # English description：
 =========== Network ===========   
