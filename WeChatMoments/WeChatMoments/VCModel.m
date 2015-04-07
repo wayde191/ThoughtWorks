@@ -17,10 +17,14 @@
 #define WHO_AM_I_Service    @"WhoAmI_Service"
 #define GET_TWEETS_Service  @"GetTweets_Service"
 
+static const NSInteger kTweetsNumberPerPage = 5;
+
 @interface VCModel () {
     BOOL _getWhoAmIDone;
     BOOL _getTweetsDone;
     
+    NSInteger _totalPageNum;
+    NSInteger _currentPageNum;
 }
 
 @property (nonatomic, strong) GetAllDataHandler getAllDataBlockHandler;
@@ -34,6 +38,8 @@
     if (self) {
         _getWhoAmIDone = NO;
         _getTweetsDone = NO;
+        _currentPageNum = 0;
+        _totalPageNum = 0;
         self.whoami = nil;
         self.tweetsArr = @[];
     }
@@ -41,6 +47,30 @@
 }
 
 #pragma mark - Public Methods
+- (void)simulateRefreshing {
+    _currentPageNum = 0;
+    _totalPageNum = 0;
+}
+
+- (void)restore {
+    _totalPageNum = self.tweetsArr.count / kTweetsNumberPerPage;
+    _currentPageNum = MIN(_totalPageNum, 1);
+}
+
+- (BOOL)hasMorePage {
+    return _totalPageNum > _currentPageNum;
+}
+
+- (void)loadNextPage {
+    if (_currentPageNum < _totalPageNum) {
+        _currentPageNum++;
+    }
+}
+
+- (NSInteger)numberOfRows {
+    return _currentPageNum * kTweetsNumberPerPage;
+}
+
 - (void)restoreTweets {
     
 }
@@ -138,6 +168,7 @@
 
 - (void)serviceDone {
     if (_getWhoAmIDone && _getTweetsDone && self.getAllDataBlockHandler) {
+        [self restore];
         self.getAllDataBlockHandler();
     }
 }

@@ -17,4 +17,10 @@ typedef void(^GetAllDataHandler)();
 @property (nonatomic, strong) User *whoami;
 @property (nonatomic, strong) NSArray *tweetsArr;
 
+- (void)simulateRefreshing;
+- (void)restore;
+- (BOOL)hasMorePage;
+- (void)loadNextPage;
+- (NSInteger)numberOfRows;
+
 @end

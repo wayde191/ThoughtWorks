@@ -11,7 +11,7 @@
 
 #define TWLOGPRINT(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
-#if APP_PRODUCTION_ENVIRONMENT == 1
+#if APP_PRODUCTION_ENVIRONMENT == 0
 #define TWLOGINFO(xx, ...)  TWLOGPRINT(xx, ##__VA_ARGS__)
 #else
 #define TWLOGINFO(xx, ...)  ((void)0)

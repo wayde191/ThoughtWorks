@@ -12,7 +12,7 @@
 @interface Comment : TWBaseModel
 
 @property (nonatomic, strong) NSString *content;
-@property (nonatomic, strong) User *sender;
+@property (nonatomic, strong) User *senderUser;
 
 - (id)initWithDic:(NSDictionary *)userInfo;
 

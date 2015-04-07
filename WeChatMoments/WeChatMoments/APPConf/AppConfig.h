@@ -14,5 +14,8 @@
 
 #define APP_PRODUCTION_ENVIRONMENT      1
 
+#define ScreenBoundHeight               [UIScreen mainScreen].bounds.size.height
+#define ScreenBoundWidth                [UIScreen mainScreen].bounds.size.width
+
 
 #endif

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (iHAddition)
+@interface NSString (TWAddition)
 
 - (NSString *)MD5;
 

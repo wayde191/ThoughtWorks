@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class VCModel, CommentsCell;
 @interface VCTableViewDataSource : NSObject
 
+@property (nonatomic, strong) VCModel *dm;
+
+- (NSInteger)getLoadingMoreCellTag;
+- (void)registerCells:(UITableView *)tableView;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
-- (UITableViewCell*)cellForTableView:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
+- (CommentsCell*)cellForTableView:(UITableView*)tableView indexPath:(NSIndexPath*)indexPath;
 - (CGFloat)cellHeightForIndexPath:(NSIndexPath*)indexPath;
 
 @end

@@ -86,6 +86,10 @@ static const NSInteger kMaxCachedImageNumber = 10;
 }
 
 - (void)cacheImage:(UIImage *)image inMemoryByName:(NSString *)nameKey {
+    if (!image) {
+        return;
+    }
+    
     if (self.cacheOrderArr.count >= kMaxCachedImageNumber) {
         NSString *firstKey = self.cacheOrderArr[0];
         [self.cachePoolDic removeObjectForKey:firstKey];

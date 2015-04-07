@@ -9,5 +9,6 @@
 #ifndef WeChatMoments_TWAdditions_UIKit_h
 #define WeChatMoments_TWAdditions_UIKit_h
 
+#import "UIImage+TWAddition.h"
 
 #endif

@@ -23,6 +23,15 @@
 		B73A180C1AD12AF4006B5578 /* TWImageCacheCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180B1AD12AF4006B5578 /* TWImageCacheCenter.m */; };
 		B73A180F1AD12E2E006B5578 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180E1AD12E2E006B5578 /* TWImageView.m */; };
 		B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18171AD13665006B5578 /* NSString+TWAddition.m */; };
+		B76B2EE01AD3F69900B9AA6B /* TWCommentsBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2EDF1AD3F69900B9AA6B /* TWCommentsBaseCell.m */; };
+		B76B2EE31AD3F6EF00B9AA6B /* CommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2EE21AD3F6EF00B9AA6B /* CommentsCell.m */; };
+		B76B2EE61AD3F7F100B9AA6B /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2EE51AD3F7F100B9AA6B /* AlbumView.m */; };
+		B76B2EE91AD3F80100B9AA6B /* CommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2EE81AD3F80100B9AA6B /* CommentsView.m */; };
+		B76B2EEC1AD3FB3700B9AA6B /* UIImage+TWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2EEB1AD3FB3700B9AA6B /* UIImage+TWAddition.m */; };
+		B76B2EEE1AD437E500B9AA6B /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76B2EED1AD437E500B9AA6B /* CommentsCell.xib */; };
+		B76B2F231AD460D200B9AA6B /* LoadingMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B76B2F221AD460D200B9AA6B /* LoadingMoreCell.m */; };
+		B76B2F251AD460EB00B9AA6B /* LoadingMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76B2F241AD460EB00B9AA6B /* LoadingMoreCell.xib */; };
+		B792B47E1AD3783C00D22C30 /* TWCommentsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B792B47D1AD3783C00D22C30 /* TWCommentsHeaderView.m */; };
 		B7AE50261AD41A3F00297556 /* VCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AE50251AD41A3F00297556 /* VCTableViewDataSource.m */; };
 		B7FCC3541ACF760E00F6BEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3531ACF760E00F6BEBC /* main.m */; };
 		B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3561ACF760E00F6BEBC /* AppDelegate.m */; };
@@ -82,6 +91,22 @@
 		B73A18151AD13603006B5578 /* TWAdditions+UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWAdditions+UIKit.h"; sourceTree = "<group>"; };
 		B73A18161AD13665006B5578 /* NSString+TWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TWAddition.h"; sourceTree = "<group>"; };
 		B73A18171AD13665006B5578 /* NSString+TWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TWAddition.m"; sourceTree = "<group>"; };
+		B76B2EDE1AD3F69900B9AA6B /* TWCommentsBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCommentsBaseCell.h; sourceTree = "<group>"; };
+		B76B2EDF1AD3F69900B9AA6B /* TWCommentsBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCommentsBaseCell.m; sourceTree = "<group>"; };
+		B76B2EE11AD3F6EF00B9AA6B /* CommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsCell.h; sourceTree = "<group>"; };
+		B76B2EE21AD3F6EF00B9AA6B /* CommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsCell.m; sourceTree = "<group>"; };
+		B76B2EE41AD3F7F100B9AA6B /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		B76B2EE51AD3F7F100B9AA6B /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		B76B2EE71AD3F80100B9AA6B /* CommentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsView.h; sourceTree = "<group>"; };
+		B76B2EE81AD3F80100B9AA6B /* CommentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsView.m; sourceTree = "<group>"; };
+		B76B2EEA1AD3FB3700B9AA6B /* UIImage+TWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TWAddition.h"; sourceTree = "<group>"; };
+		B76B2EEB1AD3FB3700B9AA6B /* UIImage+TWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TWAddition.m"; sourceTree = "<group>"; };
+		B76B2EED1AD437E500B9AA6B /* CommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		B76B2F211AD460D200B9AA6B /* LoadingMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingMoreCell.h; sourceTree = "<group>"; };
+		B76B2F221AD460D200B9AA6B /* LoadingMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingMoreCell.m; sourceTree = "<group>"; };
+		B76B2F241AD460EB00B9AA6B /* LoadingMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingMoreCell.xib; sourceTree = "<group>"; };
+		B792B47C1AD3783C00D22C30 /* TWCommentsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCommentsHeaderView.h; sourceTree = "<group>"; };
+		B792B47D1AD3783C00D22C30 /* TWCommentsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCommentsHeaderView.m; sourceTree = "<group>"; };
 		B7AE50241AD41A3F00297556 /* VCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableViewDataSource.h; sourceTree = "<group>"; };
 		B7AE50251AD41A3F00297556 /* VCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableViewDataSource.m; sourceTree = "<group>"; };
 		B7FCC34E1ACF760E00F6BEBC /* WeChatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,8 +204,11 @@
 		B73A17FA1AD101A5006B5578 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B76B2EDD1AD3F67900B9AA6B /* Cells */,
 				B73A180D1AD12E2E006B5578 /* TWImageView.h */,
 				B73A180E1AD12E2E006B5578 /* TWImageView.m */,
+				B792B47C1AD3783C00D22C30 /* TWCommentsHeaderView.h */,
+				B792B47D1AD3783C00D22C30 /* TWCommentsHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,8 +246,29 @@
 			isa = PBXGroup;
 			children = (
 				B73A18151AD13603006B5578 /* TWAdditions+UIKit.h */,
+				B76B2EEA1AD3FB3700B9AA6B /* UIImage+TWAddition.h */,
+				B76B2EEB1AD3FB3700B9AA6B /* UIImage+TWAddition.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B76B2EDD1AD3F67900B9AA6B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B76B2EDE1AD3F69900B9AA6B /* TWCommentsBaseCell.h */,
+				B76B2EDF1AD3F69900B9AA6B /* TWCommentsBaseCell.m */,
+				B76B2EE11AD3F6EF00B9AA6B /* CommentsCell.h */,
+				B76B2EE21AD3F6EF00B9AA6B /* CommentsCell.m */,
+				B76B2EED1AD437E500B9AA6B /* CommentsCell.xib */,
+				B76B2EE41AD3F7F100B9AA6B /* AlbumView.h */,
+				B76B2EE51AD3F7F100B9AA6B /* AlbumView.m */,
+				B76B2EE71AD3F80100B9AA6B /* CommentsView.h */,
+				B76B2EE81AD3F80100B9AA6B /* CommentsView.m */,
+				B76B2F211AD460D200B9AA6B /* LoadingMoreCell.h */,
+				B76B2F221AD460D200B9AA6B /* LoadingMoreCell.m */,
+				B76B2F241AD460EB00B9AA6B /* LoadingMoreCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B7FCC3451ACF760E00F6BEBC = {
@@ -377,9 +426,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FCC35D1ACF760E00F6BEBC /* Main.storyboard in Resources */,
+				B76B2F251AD460EB00B9AA6B /* LoadingMoreCell.xib in Resources */,
 				B7FCC3621ACF760E00F6BEBC /* LaunchScreen.xib in Resources */,
 				B73A17EC1AD03D4F006B5578 /* LICENSE in Resources */,
 				B7FCC35F1ACF760E00F6BEBC /* Images.xcassets in Resources */,
+				B76B2EEE1AD437E500B9AA6B /* CommentsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,16 +451,23 @@
 				B73A17F21AD0CBD5006B5578 /* TWRequestResponseFailure.m in Sources */,
 				B73A180F1AD12E2E006B5578 /* TWImageView.m in Sources */,
 				B73A180C1AD12AF4006B5578 /* TWImageCacheCenter.m in Sources */,
+				B76B2EE01AD3F69900B9AA6B /* TWCommentsBaseCell.m in Sources */,
+				B76B2EE61AD3F7F100B9AA6B /* AlbumView.m in Sources */,
 				B73A18061AD10FE3006B5578 /* TWBaseModel.m in Sources */,
 				B73A18031AD104E2006B5578 /* Tweet.m in Sources */,
 				B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */,
+				B76B2EE91AD3F80100B9AA6B /* CommentsView.m in Sources */,
 				B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */,
+				B76B2F231AD460D200B9AA6B /* LoadingMoreCell.m in Sources */,
 				B73A17F51AD0CDDB006B5578 /* TWRequestResponseSuccess.m in Sources */,
 				B73A17F81AD100E6006B5578 /* VCModel.m in Sources */,
 				B7AE50261AD41A3F00297556 /* VCTableViewDataSource.m in Sources */,
 				B73A17DC1AD02855006B5578 /* TWRequest.m in Sources */,
+				B792B47E1AD3783C00D22C30 /* TWCommentsHeaderView.m in Sources */,
+				B76B2EE31AD3F6EF00B9AA6B /* CommentsCell.m in Sources */,
 				B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */,
 				B73A17FD1AD1028A006B5578 /* User.m in Sources */,
+				B76B2EEC1AD3FB3700B9AA6B /* UIImage+TWAddition.m in Sources */,
 				B73A18001AD10364006B5578 /* Comment.m in Sources */,
 				B73A17ED1AD03D4F006B5578 /* README.md in Sources */,
 				B7FCC3541ACF760E00F6BEBC /* main.m in Sources */,
@@ -491,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -526,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

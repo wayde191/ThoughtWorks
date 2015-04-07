@@ -16,7 +16,7 @@
     if (self) {
         //TODO: validation data
         self.content = userInfo[@"content"];
-        self.sender = [[User alloc] initWithDic:userInfo[@"sender"]];
+        self.senderUser = [[User alloc] initWithDic:userInfo[@"sender"]];
     }
     return self;
 }

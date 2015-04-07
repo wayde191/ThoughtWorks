@@ -12,7 +12,7 @@
 @interface Tweet : TWBaseModel
 
 @property (nonatomic, strong) NSString *content;
-@property (nonatomic, strong) User *sender;
+@property (nonatomic, strong) User *senderUser;
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) NSArray *comments;
 

@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    EImageDisplayTypeNone = 0,
+    EImageDisplayTypeProportionScaling = 1,
+    EImageDisplayTypeScalingAndCropping = 2,
+} EImageDisplayType;
+
 @interface TWImageView : UIImageView
 
+- (id)initWithFrame:(CGRect)frame;
 - (void)loadImageByUrl:(NSString *)imageUrl;
+- (void)loadImageByUrl:(NSString *)imageUrl byDisplayType:(EImageDisplayType)displayType;
 
 @end
