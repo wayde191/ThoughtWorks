@@ -10,7 +10,7 @@ Get Ready!
 4: 图片显示。根据不同需求，在显示前，当tweet里只有一张图片时，等比处理并显示；当有多张图片时，缩放并裁剪中心区域进行显示，控制内存大小并保证图片质量。当下载失败时显示刷新按钮，可点击重新加载。   
 5: TableView原生上拉加载更多，下接刷新。内容动态计算。   
 6: 工程源码Git控制。Github: https://github.com/wayde191/ThoughtWorks ; 欢迎查阅。   
-7: 视频真机Demo下载地址：http://pan.baidu.com/s/1i3h90PJ
+7: 视频真机Demo下载地址：http://pan.baidu.com/s/1i3h90PJ   
 8: 生产开发环境切换 AppConf->AppConfig.h : APP_PRODUCTION_ENVIRONMENT。当需要查看log时，可以打开此宏。   
 9: 测试用例有添加，但还需要完善。   
 10: 没有使用nibs, storyboards   
