@@ -23,6 +23,7 @@
 		B73A180C1AD12AF4006B5578 /* TWImageCacheCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180B1AD12AF4006B5578 /* TWImageCacheCenter.m */; };
 		B73A180F1AD12E2E006B5578 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A180E1AD12E2E006B5578 /* TWImageView.m */; };
 		B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = B73A18171AD13665006B5578 /* NSString+TWAddition.m */; };
+		B7AE50261AD41A3F00297556 /* VCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AE50251AD41A3F00297556 /* VCTableViewDataSource.m */; };
 		B7FCC3541ACF760E00F6BEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3531ACF760E00F6BEBC /* main.m */; };
 		B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3561ACF760E00F6BEBC /* AppDelegate.m */; };
 		B7FCC35A1ACF760E00F6BEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FCC3591ACF760E00F6BEBC /* ViewController.m */; };
@@ -81,6 +82,8 @@
 		B73A18151AD13603006B5578 /* TWAdditions+UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWAdditions+UIKit.h"; sourceTree = "<group>"; };
 		B73A18161AD13665006B5578 /* NSString+TWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TWAddition.h"; sourceTree = "<group>"; };
 		B73A18171AD13665006B5578 /* NSString+TWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TWAddition.m"; sourceTree = "<group>"; };
+		B7AE50241AD41A3F00297556 /* VCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTableViewDataSource.h; sourceTree = "<group>"; };
+		B7AE50251AD41A3F00297556 /* VCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTableViewDataSource.m; sourceTree = "<group>"; };
 		B7FCC34E1ACF760E00F6BEBC /* WeChatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FCC3521ACF760E00F6BEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7FCC3531ACF760E00F6BEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 				B7FCC3591ACF760E00F6BEBC /* ViewController.m */,
 				B73A17F61AD100E6006B5578 /* VCModel.h */,
 				B73A17F71AD100E6006B5578 /* VCModel.m */,
+				B7AE50241AD41A3F00297556 /* VCTableViewDataSource.h */,
+				B7AE50251AD41A3F00297556 /* VCTableViewDataSource.m */,
 				B73A17F91AD101A5006B5578 /* Models */,
 				B73A17FA1AD101A5006B5578 /* Views */,
 				B73A18091AD12ABA006B5578 /* CacheCenter */,
@@ -401,6 +406,7 @@
 				B7FCC3571ACF760E00F6BEBC /* AppDelegate.m in Sources */,
 				B73A17F51AD0CDDB006B5578 /* TWRequestResponseSuccess.m in Sources */,
 				B73A17F81AD100E6006B5578 /* VCModel.m in Sources */,
+				B7AE50261AD41A3F00297556 /* VCTableViewDataSource.m in Sources */,
 				B73A17DC1AD02855006B5578 /* TWRequest.m in Sources */,
 				B73A18181AD13665006B5578 /* NSString+TWAddition.m in Sources */,
 				B73A17FD1AD1028A006B5578 /* User.m in Sources */,
